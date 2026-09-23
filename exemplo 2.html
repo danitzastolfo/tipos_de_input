@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Exemplo 2: Formulários</title>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center; color: purple;">Cadastro de Alunos</h1>
+        </header>
+        <main>
+            <form action="#" method="get">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Aluno/a" required><br>
+
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="e-mail" name="e-mail" placeholder="E-mail" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required><br>
+                
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Idade" required><br>
+
+                <label style="color: blue;">Você estuda para as provas?</label><br><br>
+                <label style="color: green;" for="Sim">Sim, estudo</label>
+                <input type="radio" value="Sim" id="Sim" name="pergunta" required><br>
+                <label style="color: red;" for="Não">Não, não estudo</label>
+                <input type="radio" value="Não" id="Não" name="pergunta" required><br><br>
+
+                <label for="preferência">O quanto você gosta das aulas do SENAI?</label><br>
+                <input type="range" id="preferência" name="preferência" required><br>
+
+                <label for="cor">Selecione sua cor favorita:</label><br>
+                <input type="color" id="cor" name="cor" required><br><br>
+
+                <label for="opção">Selecione sua sala:</label>
+                <select name="opção" id="opção" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    <option style="color: red;" value="vermelha">Sala Vermelha</option>
+                    <option style="color: blue;" value="azul">Sala Azul</option>
+                    <option style="color: green;" value="verde">Sala Verde</option>
+                </select><br><br>
+
+                <label for="file">Adicione um arquivo:</label>
+                <input type="file" id="file" name="file"><br><br>
+
+                <label for="observações">Observações:</label><br>
+                <textarea name="observações" id="observações" placeholder="Observações opcionais" rows="4" cols="64"></textarea><br><br>
+
+                <input type="checkbox" id="termos" name="termos" value="termos" required>
+                <label for="termos">Li e concordo com os Termos</label><br>
+
+                <input type="checkbox" id="e-mails" name="e-mails" value="e-mails">
+                <label for="e-mails">Desejo receber e-mails de divulgação e novidades</label><br>
+
+                <input type="checkbox" id="sms" name="sms" value="sms">
+                <label for="sms">Desejos receber SMSs de divulgação e novidades</label>
+
+                <br><br><button type="submit">ENVIAR</button>
+            </form>
+        </main>
+    </body>
+</html>
