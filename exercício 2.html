@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>exercício 02</title>
+    </head>
+    <body>
+        <main>
+        <form action="#" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seu@e-mail.com" required><br>
+
+            <label for="avaliacao">Avaliação:</label>
+            <input type="number" step="0.01" id="email" name="email" placeholder="5 = nota cinco" required><br>
+
+            <label for="comentario">Comentário:</label><br>
+            <textarea name="comentario" id="comentario" placeholder="Comente aqui..." required></textarea><br>
+
+            <label for="recomendacao">Recomendaria?</label><br>
+            <label for="sim">Sim</label>
+            <input type="radio" id="sim" name="sim">
+            <label for="nao">Não</label>
+            <input type="radio" id="nao" name="nao"><br>
+
+            <label for="razao">Razão da Avaliação:</label>
+            <select name="razao" id="razao" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="xxbo">XX é bom</option>
+                <option value="xxru">XX é ruim</option>
+                <option value="xybo">XY é bom</option>
+                <option value="xyru">XY é ruim</option>
+            </select><br>
+
+            <label for="sugestao">Sugestão de melhoria:</label><br>
+            <textarea name="sugestao" id="sugestao" placeholder="Sugira aqui..." required></textarea><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="number" name="number" required><br>
+
+            <label>Gênero:</label><br><br>
+            <label for="femi">Feminino</label>
+            <input type="radio" id="femi" value="femi" name="gênero" required><br>
+            <label for="masc">Masculino</label>
+            <input type="radio" id="masc" value="masc" name="gênero" required><br>
+            <label for="outro">Outro</label>
+            <input type="radio" id="outro" value="outro" name="gênero" required><br><br>
+
+            <label for="satisfacao">Satisfação com o produto:</label><br>
+            <input type="range" id="satisfacao" name="satisfacao" required><br>
+
+            <label for="facilidade">Facilidade de uso:</label>
+            <input type="number" id="facilidade" name="facilidade" required><br>
+
+            <label for="qualidade">Qualidade do produto:</label>
+            <input type="number" id="qualidade" name="qualidade" required><br>
+
+            <label for="preco">Avaliação:</label>
+            <input type="number" step="0.01" id="preco" name="preco" required><br>
+
+            <label for="versao">Versão do produto:</label>
+            <input type="text" id="versao" name="versao" required><br>
+
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" name="localizacao" required><br>
+
+            <label for="data_compra">Data da compra:</label>
+            <input type="date" id="data_compra" name="data_compra" required><br>
+
+            <label for="origem">Origem da compra:</label>
+            <select name="origem" id="origem" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="xx">XX</option>
+                <option value="xy">XY</option>
+            </select><br>
+
+            <label for="suporte">Satisfação com o suporte:</label><br>
+            <input type="range" id="suporte" name="suporte" required><br>
+            
+            <br><button type="submit">ENVIAR</button>
+        </form>
+    </main>
+    </body>
+</html>
